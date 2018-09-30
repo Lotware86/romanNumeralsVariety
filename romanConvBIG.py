@@ -28,7 +28,7 @@ class NumberConverter:
 		except ValueError:
 			if num.isalpha():
 				print("\nYou should have entered an integer! We are converting numbers to roman numerals! Exiting...")
-			else:
+			elif num is not int:
 				print('\nCannot convert from values with precision or floating points, only enter integers. Exiting...')
 			quit()
 		while num > 0:
